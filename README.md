@@ -11,7 +11,21 @@ upgrades for their player and attack stats.
 
 I built a proof of concept to emulate Vampire survivors using Pygame-ce. Pinocky is in a playable state, but currently
 only has the fundamentals necessary for a game loop. The player can attack and kill enemies who drop xp upon death, 
-absorb the xp drops which count towards leveling up which results in the player picking up one of two upgrades. There
-are currently only two enemies, and two types of drops, but the enemies, pickups, attacks, and upgrades were all written
-in a way that makes them scalable. All of these systems use Enums to easily distinguish them in code and allow for more
+absorb the xp drops which count towards leveling up which results in the player picking up one of two upgrades. The end
+condition when the player dies. After death the player is presented with a score, their time lived, and options for
+directed to the main menu or to exit the application.
+
+There are currently only two enemies, and two types of drops, but the enemies, pickups, attacks, and upgrades were all 
+written in a way that makes them scalable. All of these systems use Enums to easily distinguish them in code and allow for more
 of anyone of them to be added.
+
+### To run the game:
+1. Install [Python 3.11](https://www.python.org/downloads/)
+2. Install pygame-ce from command prompt/powershell
+   >pip install pygame-ce or pip3 install pygame-ce for most people
+3. Clone the repo to a folder/directory
+4. Open either command prompt/powershell
+5. Switch to the folder/directory containing main.py from this project
+   >cd *folder/directory path*
+6. Run main.py from the folder/directory containing it
+   >python main.py
