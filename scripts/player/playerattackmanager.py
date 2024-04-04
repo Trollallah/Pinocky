@@ -80,4 +80,3 @@ class PlayerAttackManager(pygame.sprite.Group):
                     if enemy.ID not in attack.already_attacked_IDs:
                         attack.already_attacked_IDs.append(enemy.ID)
                         attack.apply_damage(enemy)
-
